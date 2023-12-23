@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Ana Sayfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #006747;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1b1b1b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+
+        #featured-courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .course {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1b1b1b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Kategoriler</a>
+            <input type="text" id="search" placeholder="Arama...">
+            <a href="#">Udemy Business</a>
+            <a href="#">Udemy'de Eğitim Verin</a>
+        </nav>
+        
+        <div id="auth-buttons">
+            <button>Oturum Aç</button>
+            <button>Kaydol</button>
+        </div>
+    </header>
+    <section>
+        <div id="content">
+            <h2>İndirimli kurslarla öğrenmeye başlayın</h2>
+            <p>Udemy'ye yeni katıldıysanız size iyi haberlerimiz var: Sınırlı bir süre boyunca yeni öğrenciler için kurslar yalnızca ₺89,99'den başlayan fiyatlarla! Hemen kaydolun.</p>
+            <div>
+                <img src="img/udemy.png" alt="Hoş Geldiniz">
+            </div>
+        </div>
+    </section>
+
+    <br><br><hr>
+
+    <section>
+        <div>
+            <p> Dünyanın dört bir yanından 15.000 + şirket ve milyonlarca öğrenci güveniyor</p>
+            <div><img src="img/ericsson.svg" alt=""></div>
+            <div><img src="img/samsung.svg" alt=""></div>
+            <div><img src="img/volkswagen.svg" alt=""></div>
+        </div>
+
+    </section>
+
+    <br><br><hr>
+
+    <section>
+        <h1>Kapsamlı kurs seçkisi</h1>
+        <p>Her ay yayınlanan yeni kurslarla 210.000 + online video kurs arasından seçiminizi yapın</p>
+    </section>
+
+    <br><br><hr>
+
+   <section>
+    <div id="tabs">
+        <div class="tab" onclick="showTab('python-tab')">Python</div>
+        <div class="tab" onclick="showTab('excel-tab')">Excel</div>
+        <div class="tab" onclick="showTab('web-dev-tab')">Web Geliştirme</div>
+    </div>
+
+    <div id="content">
+        <div id="python-tab" class="tab-content active">
+            <h2>Python Eğitimleri</h2>
+            <p>İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya veri bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden biridir. Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur.</p>
+            <div>
+                <img src="img/1.jpg" alt="Python Eğitimi">
+            </div>
+        </div>
+
+        <div id="excel-tab" class="tab-content">
+            <h2>Excel Eğitimleri</h2>
+            <p>Çalıştığınız sektör ne olursa olsun Microsoft Office Excel, verileri düzenlemek ve göstermek için çok değerli bir çalışma tablosu programıdır. Excel, büyük bilgi gruplarını toplamanıza ve analiz etmenize yardımcı olacak işlevler, formüller ve pivot tabloları sunar.</p>
+            <div>
+                <img src="img/1.jpg" alt="Excel Eğitimi">
+            </div>
+        </div>
+
+        <div id="web-dev-tab" class="tab-content">
+            <h2>Web Geliştirme Eğitimleri</h2>
+            <p>Web geliştirme dünyası, internetin kendisi kadar geniştir. Sosyal ve meslek hayatlarımızın büyük bir kısmı internette yayınlanır. Bu da, giderek daha çok güvendiğimiz web sitelerini ve uygulamaları oluşturma, yönetme ve hata ayıklama amacıyla yeni sektörlere yol açar.</p>
+            <div>
+                <img src="img/1.jpg" alt="Web Geliştirme Eğitimi">
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <br><br><hr>
+
+   <section>
+    <h2>Öğrenciler Bunları Görüntülüyor</h2>
+
+    <div class="liked-courses">
+        <div class="course">
+            <h3>Komple Uygulamalı Web Geliştirme Eğitimi</h3>
+            <p>Sadık Turan</p>
+            <img src="img/1.jpg" alt="Kurs 1">
+        </div>
+
+        <div class="course">
+            <h3>Etik Hacker Olma Kursu</h3>
+            <p>Atıl Samancıoğlu</p>
+            <img src="img/1.jpg" alt="Kurs 2">
+        </div>
+
+        <div class="course">
+            <h3>Sıfırdan İleri Python</h3>
+            <p>Mustafa Murat Coşkun</p>
+            <img src="img/1.jpg" alt="Kurs 3">
+        </div>
+    </div>
+</section>
+
+<br><br><hr>
+    
+<section>
+    <h2>En Popüler Kategoriler</h2>
+
+    <div class="popular-categories">
+        <div class="category">
+            <h3>Tasarım</h3>
+            <div>
+                <img src="img/1.jpg" alt="Kategori 1">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Yazılım Geliştirme</h3>
+            <div>
+                <img src="img/1.jpg" alt="Kategori 2">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Pazarlama</h3>
+            <div>
+                <img src="img/1.jpg" alt="Kategori 3">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>BT Ve Yazılım</h3>
+            <div>
+                <img src="img/1.jpg" alt="Kategori 4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br><hr>
+
+<section>
+    <h1>Kategoriye Göre Öne Çıkanlar</h1>
+    <div class="category">
+        <h2 class="category-title">Development</h2>
+        <div class="featured-topics">
+            <div class="topic">
+                <h3>Python</h3>
+                <p>36,354,994 learners</p>
+            </div>
+            <div class="topic">
+                <h3>Web Development</h3>
+                <p>11,415,615 learners</p>
+            </div>
+            <div class="topic">
+                <h3>Machine Learning</h3>
+                <p>7,070,015 learners</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Business</h2>
+        <div class="featured-topics">
+            <div class="topic">
+                <h3>Financial Analysis</h3>
+                <p>1,195,282 learners</p>
+            </div>
+            <div class="topic">
+                <h3>SQL</h3>
+                <p>5,977,561 learners</p>
+            </div>
+            <div class="topic">
+                <h3>PMP</h3>
+                <p>1,733,398 learners</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">IT and Software</h2>
+        <div class="featured-topics">
+            <div class="topic">
+                <h3>Amazon AWS</h3>
+                <p>6,123,456 learners</p>
+            </div>
+            <div class="topic">
+                <h3>Ethical Hacking</h3>
+                <p>10,931,066 learners</p>
+            </div>
+            <div class="topic">
+                <h3>Cyber Security</h3>
+                <p>3,998,037 learners</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Design</h2>
+        <div class="featured-topics">
+            <div class="topic">
+                <h3>Photoshop</h3>
+                <p>10,909,736 learners</p>
+            </div>
+            <div class="topic">
+                <h3>Graphic Design</h3>
+                <p>3,381,052 learners</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br><hr>
+
+
+<section>
+    <h2>Eğitmen olun</h2>
+    <p>Dünyanın dört bir yanından eğitmenler Udemy'de milyonlarca öğrenciye eğitim veriyor. Sevdiğiniz şeyleri öğretmeniz için gereken araçları ve yetkinlikleri sağlıyoruz.</p>
+    <div>
+        <img src="img/hoca.jpg" alt="">
+    </div>
+</section>
+
+<br><br><hr>
+   
+
+   <footer>
+        <div class="footer-links">
+            <a href="#">Udemy Business</a>
+            <a href="#">Udemy'de Eğitim Verin</a>
+            <a href="#">Uygulamayı Edinin</a>
+            <a href="#">Hakkımızda</a>
+            <a href="#">İletişim</a>
+            <a href="#">Kariyer</a>
+            <a href="#">Blog</a>
+            <a href="#">Yardım ve Destek</a>
+            <a href="#">İş Ortaklığı</a>
+            <a href="#">Yatırımcılar</a>
+            <a href="#">Koşullar</a>
+            <a href="#">Gizlilik Politikası</a>
+            <a href="#">Site Haritası</a>
+            <a href="#">Erişilebilirlik Beyanı</a>
+        </div>
+        <p>© 2023 Udemy, Inc.</p>
+    </footer>
+
+</body>
+</html>

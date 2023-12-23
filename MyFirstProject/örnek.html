@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Tablo ve Footer HTML Sayfası</title>
+    <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#bolum1">Videolar</a></li>
+            <li><a href="#bolum2">4x4 Tablo</a></li>
+            <li><a href="#bolum3">Bölüm 3</a></li>
+        </ul>
+    </nav>
+
+    <section id="bolum1">
+        <h2>Bölüm 1 - Videolar</h2>
+        <div>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+
+            <video controls>
+                <source src="video4.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+    </section>
+
+    <section id="bolum2">
+        <h2>Bölüm 2 - 4x4 Tablo</h2>
+        <div>
+            <table border="1">
+                <tr>
+                    <td>Satır 1, Sütun 1</td>
+                    <td>Satır 1, Sütun 2</td>
+                    <td>Satır 1, Sütun 3</td>
+                    <td>Satır 1, Sütun 4</td>
+                </tr>
+                <tr>
+                    <td>Satır 2, Sütun 1</td>
+                    <td>Satır 2, Sütun 2</td>
+                    <td>Satır 2, Sütun 3</td>
+                    <td>Satır 2, Sütun 4</td>
+                </tr>
+                <tr>
+                    <td>Satır 3, Sütun 1</td>
+                    <td>Satır 3, Sütun 2</td>
+                    <td>Satır 3, Sütun 3</td>
+                    <td>Satır 3, Sütun 4</td>
+                </tr>
+                <tr>
+                    <td>Satır 4, Sütun 1</td>
+                    <td>Satır 4, Sütun 2</td>
+                    <td>Satır 4, Sütun 3</td>
+                    <td>Satır 4, Sütun 4</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="bolum3">
+        <h2>Bölüm 3</h2>
+        <p>Son bölümde sayfanın final içeriğini ekleyebilirsiniz. Bu örnekte basit bir HTML sayfası oluşturulmuştur.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sayfa Alt Bilgisi</p>
+    </footer>
+
+</body>
+</html>
